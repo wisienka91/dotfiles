@@ -1,0 +1,29 @@
+[
+    {
+        "defaults": {
+            "link": {
+                "relink": true
+            }
+        }
+    },
+    {
+        "clean": ["~"]
+    },
+    {
+        "link": {
+            "~/.dotfiles": "",
+            "~/.vim": "vim",
+            "~/.vimrc": "vimrc"
+        }
+    },
+    {
+        "shell": [
+            ["git submodule update --init --recursive", "Installing submodules..."],
+	    ["sudo apt-get install zsh", "Installing zsh..."],
+	    ["sudo apt-get install git-core", "Installing git-core..."],
+	    ["wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh", "Installing zsh theme..."],
+	    ["chsh -s `which zsh`", "Setting zsh to default shell..."],
+	    ["sh -c '$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)'", "Installing oh-my-zsh..."]
+        ]
+    }
+]
