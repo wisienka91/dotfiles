@@ -8,15 +8,20 @@
         }
     },
     {
+        "shell": [
+	    ["mkdir ~/.vim; mkdir ~/.vim/bundle", "Preparing vim directories..."],
+	    ["git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim", "Downloading Vundle..."]
+	]
+    },
+    {
         "link": {
             "~/.vimrc": ".vimrc",
-	    "~/.vim": ".vim"
         }
     },
     {
         "shell": [
             ["git submodule update --init --recursive", "Installing submodules..."],
-	    ["vim +PluginInstall +qall", "Installing Vim plugins"]
+	    ["vim +PluginInstall +qall", "Installing Vim plugins..."]
         ]
     }
 ]
