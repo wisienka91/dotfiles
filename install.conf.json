@@ -15,13 +15,14 @@
     },
     {
         "link": {
-            "~/.vimrc": ".vimrc",
+            "~/.vimrc": ".vimrc"
         }
     },
     {
         "shell": [
             ["git submodule update --init --recursive", "Installing submodules..."],
-	    ["vim +PluginInstall +qall", "Installing Vim plugins..."]
+	    ["vim +PluginInstall +qall", "Installing Vim plugins..."],
+	    ["echo 'colorscheme solarized' >> .vimrc", "Setting vim color scheme..."]
         ]
     }
 ]
