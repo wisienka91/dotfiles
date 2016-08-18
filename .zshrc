@@ -91,3 +91,7 @@ if [ -f ~/.zsh_aliases ]; then
     . ~/.zsh_aliases
 fi
 
+if [ -f /etc/skel/.zshrc.local ]; then
+    source /etc/skel/.zshrc.local
+fi
+
