@@ -22,7 +22,11 @@
         "shell": [
             ["git submodule update --init --recursive", "Installing submodules..."],
 	    ["vim +PluginInstall +qall", "Installing Vim plugins..."],
-	    ["echo 'colorscheme solarized' >> .vimrc", "Setting vim color scheme..."]
+	    ["echo 'colorscheme solarized' >> .vimrc", "Setting vim color scheme..."],
+	    ["sudo apt-get install zsh", "Installing zsh..."],
+	    ["sudo apt-get install git-core", "Installing git-core..."],
+	    ["wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh", "Installing oh-my-zsh..."],
+	    ["chsh -s `which zsh`", "Setting default shell to zsh..."]
         ]
     }
 ]
