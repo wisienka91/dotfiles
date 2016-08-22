@@ -27,7 +27,7 @@
 	    ["sudo apt-get install zsh", "Installing zsh..."],
 	    ["sudo apt-get install git-core", "Installing git-core..."],
 	    ["wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh", "Installing oh-my-zsh..."],
-	    ["sudo chsh -s `which zsh`", "Setting default shell to zsh..."]
+	    ["chsh -s `which zsh`", "Setting default shell to zsh..."]
         ]
     }
 ]
