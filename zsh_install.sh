@@ -11,5 +11,5 @@ echo 'Installing oh-my-zsh...'
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
 echo '.Zshrc cleanup...'
-rm -rf ~/.zshrc
+mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
 
