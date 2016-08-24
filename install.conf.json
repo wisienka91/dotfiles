@@ -16,7 +16,8 @@
     {
         "link": {
             "~/.vimrc": ".vimrc",
-            "~/zsh_install.sh": "zsh_install.sh"
+            "~/zsh_install.sh": "zsh_install.sh",
+            "~/.zshrc": ".zshrc"
         }
     },
     {
@@ -26,10 +27,5 @@
             ["echo 'colorscheme solarized' >> .vimrc", "Setting vim color scheme..."],
             [". ~/zsh_install.sh", "Installing zsh&oh-my-zsh"]
         ]
-    },
-    {
-        "link": {
-            "~/.zshrc": ".zshrc"
-        }
     }
 ]
