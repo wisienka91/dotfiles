@@ -15,7 +15,7 @@
     },
     {
         "link": {
-            "~/.vimrc": ".vimrc"
+            "~/.vimrc": ".vimrc",
 	    "~/.zshrc": ".zshrc"
         }
     },
