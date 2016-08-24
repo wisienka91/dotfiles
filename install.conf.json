@@ -16,17 +16,20 @@
     {
         "link": {
             "~/.vimrc": ".vimrc",
-            "~/.zshrc": ".zshrc"
+            "~/zsh_install.sh": "zsh_install.sh"
         }
     },
     {
         "shell": [
             ["git submodule update --init --recursive", "Installing submodules..."],
-	    ["vim +PluginInstall +qall", "Installing Vim plugins..."],
-	    ["echo 'colorscheme solarized' >> .vimrc", "Setting vim color scheme..."],
-	    ["sudo apt-get install zsh", "Installing zsh..."],
-	    ["sudo apt-get install git-core", "Installing git-core..."],
-	    ["sh -c '$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)'", "Installing oh-my-zsh..."]
+            ["vim +PluginInstall +qall", "Installing Vim plugins..."],
+            ["echo 'colorscheme solarized' >> .vimrc", "Setting vim color scheme..."],
+            ["~/zsh_install.sh", "Installing zsh&oh-my-zsh"]
         ]
+    },
+    {
+        "link": {
+            "~/.zshrc": ".zshrc"
+        }
     }
 ]
