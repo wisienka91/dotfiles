@@ -14,9 +14,11 @@
 	]
     },
     {
+        "clean": ["~"]
+    },
+    {
         "link": {
-            "~/.vimrc": ".vimrc",
-	    "~/.zshrc": ".zshrc"
+            "~/.vimrc": ".vimrc"
         }
     },
     {
@@ -28,5 +30,10 @@
 	    ["sudo apt-get install git-core", "Installing git-core..."],
 	    ["wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh", "Installing oh-my-zsh..."]
         ]
+    },
+    {
+        "link": {
+	    "~/.zshrc": ".zshrc"
+        }
     }
 ]
