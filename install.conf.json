@@ -16,6 +16,7 @@
     {
         "link": {
             "~/.vimrc": ".vimrc"
+	    "~/.zshrc": ".zshrc"
         }
     },
     {
@@ -25,12 +26,7 @@
 	    ["echo 'colorscheme solarized' >> .vimrc", "Setting vim color scheme..."],
 	    ["sudo apt-get install zsh", "Installing zsh..."],
 	    ["sudo apt-get install git-core", "Installing git-core..."],
-	    ["wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh", "Installing oh-my-zsh..."]
+	    ["sh -c '$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)'", "Installing oh-my-zsh..."]
         ]
-    },
-    {
-        "link": {
-	    "~/.zshrc": ".zshrc"
-        }
     }
 ]
