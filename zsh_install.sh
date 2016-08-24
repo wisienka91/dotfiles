@@ -4,9 +4,6 @@
 echo 'Installing zsh...'
 sudo apt-get install zsh
 
-echo 'Setting zsh to default shell...'
-chsh -s `which zsh`
-
 echo 'Installing git-core...'
 sudo apt-get install git-core
 
