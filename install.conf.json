@@ -24,7 +24,7 @@
             ["git submodule update --init --recursive", "Installing submodules..."],
             ["vim +PluginInstall +qall", "Installing Vim plugins..."],
             ["echo 'colorscheme solarized' >> .vimrc", "Setting vim color scheme..."],
-            ["~/zsh_install.sh", "Installing zsh&oh-my-zsh"]
+            [". ~/zsh_install.sh", "Installing zsh&oh-my-zsh"]
         ]
     },
     {
