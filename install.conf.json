@@ -25,7 +25,11 @@
             ["git submodule update --init --recursive", "Installing submodules..."],
             ["vim +PluginInstall +qall", "Installing Vim plugins..."],
             ["echo 'colorscheme solarized' >> .vimrc", "Setting vim color scheme..."],
-            [". ~/zsh_install.sh", "Installing zsh&oh-my-zsh"]
+            [". ~/zsh_install.sh", "Installing zsh&oh-my-zsh"],
+	    ["sudo apt-get install python-software-properties", "Installing repository manager..."],
+	    ["sudo add-apt-repository ppa:git-core/ppa", "Adding repository for git..."],
+	    ["sudo apt-get update", "Updating repository data..."],
+	    ["sudo apt-get install git", "Installing newest git..."]
         ]
     }
 ]
